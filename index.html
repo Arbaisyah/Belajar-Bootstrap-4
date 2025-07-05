@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-danger">
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
     <div class="container-fluid"> <!-- Ganti ini -->
       <a class="navbar-brand" href="#">Parsinta</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
@@ -37,6 +37,39 @@
       </div>
     </div>
   </nav>
+
+   <main class="py-4">
+  <div class="container">
+
+  <button type="button" class="btn btn-success" data-bs-target="#myModal"data-bs-toggle="modal">
+    Forgot password
+  </button>
+
+  <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="loginModal" id="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <div class="modal-title">Please enter your email to reset password</div>
+                <button type="button" class="btn-close ms-auto" data-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+               <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control">
+               </div>
+               <button type="submit" class="btn btn-primary mt-3">Reset</button>
+            </div>
+
+            <!-- <div class="modal-footer"> -->
+                <!-- <button class="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                <!-- <button class="btn btn-primary" type="button">Login</button> -->
+            <!-- </div> -->
+        </div>
+    </div>
+  </div>
+  </div>          
+  </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
